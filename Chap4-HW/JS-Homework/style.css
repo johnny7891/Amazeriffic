@@ -1,0 +1,17 @@
+body {
+	width: 855px;
+	margin: auto;
+	background: ivory;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+.container {
+	float: right;
+	width: 570px;
+}
+
+.container h3 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
