@@ -1,0 +1,53 @@
+I apologize, I forgot to push this onto github when I submitted yesterday.
+
+1)  Our project is called “Twixer” and our requirement is that we create a gateway to twitter.  
+	Users of our site will be able to upvote or downvote individual tweets/posts submitted 
+	by members of the group.  If the tweet/post gets upvoted by the majority of the members in 
+	the group, it will be posted to the group’s twitter account.  Members can also edit posts 
+	by other members.  
+2)
+Twitter REST API
+Twitcher API
+TwitPic
+
+3)
+Twitter REST API – according to twitter’s website, this API will provide access 
+	to read and write Twitter data.  It will also authoring new tweets, read profiles, 
+	and other twitter datas.
+Twitcher API – This API was created by steer, it allows developers to get twitter user’s information,
+	 timeline, and search twitter.  
+TwitPic API – allows developers to upload and post images to their Twitter accounts.  
+
+4)
+
+Check github account
+
+5) The API I choosed to use was the Twitcher API and called for timeline.  I chose this API because 
+	I find it useful to display the Twitter user timeline for the group members to see.  That 
+	way the members will know what was posted in their absences or can be used as a remainder of 
+	what’s already posted.  
+
+	URL: http://twitcher.steer.me/
+
+6)  The only problem that I can see coming up with using this particular API is that Twitter’s new 
+	API uses OAuth with a consumer key and consumer secret key.  I believe the Twitcher API 
+	supplies it users with their sets of keys to bypass the OAuth on Twitter’s servers.  So if 
+	Twitter decides for whatever reason to revoke Twitcher’s set of keys or Twitcher themselves 
+	changes keys, their API calls would no longer work with our project.  
+
+
+
+7)  Using this particular API was not hard at all because it was simply copying their URL into my 
+	JS file and changing the user name to CSUF.  Once I did that, the most difficult part was 
+	figuring out how to use the JSON objects and getting the values I wanted, in this case it was 
+	the text field.  If my group really wanted to display the timeline of the group that uses our 
+	project, I would not recommend going this particular route because Twitter has supplied a 
+	widget to do the same thing that displays a much nicer twitter box with the timeline.  
+
+
+
+8) For the sake of this assignment, I only used the API to grab the texts/tweets from the API call.  
+	Additional functionality that could be added would be to use the API user information call to 
+	get the name of the user that tweeted and displaying it on the page.  So people know who 
+	tweeted what.  My example is also missing the times/date of the tweets, the API provides a 
+	call for that also and that can also be added.  
